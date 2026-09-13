@@ -7,7 +7,7 @@ A simple calorie tracking app built with HTML, CSS, and JavaScript.
 - Add food items with calorie values
 - Remove items from the list
 - See the total calories for the day
-- Reset the daily intake
+- Reset the daily calorie intake
 - Persist data using localStorage
 - Use a simulated Fetch API example
 
