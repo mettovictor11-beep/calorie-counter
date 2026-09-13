@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calorie Counter</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Calorie Counter</h1>
+
+        <p>
+            Track your daily food and calorie intake.
+        </p>
+
+
+        <!-- Food input form -->
+        <form id="foodForm">
+
+            <label for="foodName">Food Name</label>
+
+            <input
+                type="text"
+                id="foodName"
+                placeholder="e.g. Banana"
+                required
+            >
+
+
+            <label for="calories">Calories</label>
+
+            <input
+                type="number"
+                id="calories"
+                placeholder="e.g. 105"
+                min="1"
+                required
+            >
+
+            <button type="submit">
+                Add Food
+            </button>
+
+        </form>
+
+
+        <!-- Food list -->
+        <section>
+
+            <h2>Today's Food</h2>
+
+            <ul id="foodList"></ul>
+
+        </section>
+
+
+        <!-- Total calories -->
+        <section>
+
+            <h2>Total Calories</h2>
+
+            <p id="totalCalories">0 calories</p>
+
+        </section>
+
+
+        <!-- Reset button -->
+        <button id="resetButton" type="button">
+            Reset Day
+        </button>
+
+        <button id="loadSampleButton" type="button" style="margin-top: 12px; background: #10b981; color: white;">
+            Load Sample Foods
+        </button>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
